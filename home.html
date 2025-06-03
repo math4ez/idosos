@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia para Idosos - Aprendizado Simples</title>
+    <meta name="description" content="Cursos de tecnologia adaptados para a terceira idade. Aprenda a usar celulares, computadores e internet de forma fácil e acessível.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <meta property="og:title" content="Tecnologia para Idosos - Aprendizado Simples">
+    <meta property="og:description" content="Cursos de tecnologia adaptados para a terceira idade.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#2a7f62">
+    <link rel="icon" href="imagens/favicon.ico" sizes="any">
+    <link rel="icon" href="imagens/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="imagens/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preload" href="style.css" as="style">
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  </head>
+  <body>
+    <div class="acessibilidade-bar" aria-live="polite">
+      <button id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">
+        <i class="fas fa-text-height"></i> A+ </button>
+      <button id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">
+        <i class="fas fa-text-height"></i> A- </button>
+      <button id="alto-contraste" aria-label="Ativar alto contraste">
+        <i class="fas fa-adjust"></i> Alto Contraste </button>
+      <button id="leitor-tela" aria-label="Ativar modo leitor de tela">
+        <i class="fas fa-assistive-listening-systems"></i> Leitor </button>
+    </div>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="https://i.postimg.cc/cC2JPKzr/tecnologia-para-3-idade.png" alt="Logo Tecnologia para Idosos" width="50" height="50" loading="lazy">
+          <h1>Tecnologia para <span>3°idade</span>
+          </h1>
+        </div>
+        <nav aria-label="Navegação principal">
+          <button id="menu-mobile" aria-expanded="false" aria-controls="menu" aria-label="Menu mobile">
+            <span class="menu-icon">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span class="menu-text">Menu</span>
+          </button>
+          <ul id="menu">
+            <li>
+              <a href="#inicio" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Início</span>
+              </a>
+            </li>
+            <li>
+              <a href="#cursos" class="nav-link">
+                <i class="fas fa-book"></i>
+                <span>Cursos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#dicas" class="nav-link">
+                <i class="fas fa-lightbulb"></i>
+                <span>Dicas</span>
+              </a>
+            </li>
+            <li>
+              <a href="#depoimentos" class="nav-link">
+                <i class="fas fa-comments"></i>
+                <span>Depoimentos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#recursos-externos" class="nav-link">
+                <i class="fas fa-external-link-alt"></i>
+                <span>Recursos Úteis</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contato" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contato</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="hero" id="inicio">
+        <div class="container">
+          <div class="hero-texto">
+            <h2>Aprenda tecnologia de forma fácil e acessível</h2>
+            <p>Curso especialmente desenvolvido para a terceira idade, com linguagem simples e paciência no ensino.</p>
+            <div class="hero-botoes">
+              <a href="#cursos" class="btn">Começar a aprender</a>
+              <a href="#recursos-externos" class="btn btn-secundario">Quiz interativo</a>
+            </div>
+            <article class="recursos-box" aria-labelledby="recursos-title">
+              <h3 id="recursos-title">Recursos Úteis</h3>
+              <div class="recursos-carrossel" aria-live="polite">
+                <div class="recurso-mini ativo" aria-current="true">
+                  <i class="fas fa-question-circle" aria-hidden="true"></i>
+                  <p>
+                    <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/mydoLPY" target="_blank">Quiz Interativo</a> - Teste seus conhecimentos
+                  </p>
+                </div>
+                <div class="recurso-mini">
+                  <i class="fas fa-video" aria-hidden="true"></i>
+                  <p>
+                    <a href="https://www.cursoemvideo.com/cursos/" target="_blank">Videoaulas Gratuitas</a> - Aprenda online
+                  </p>
+                </div>
+                <div class="recurso-mini">
+                  <i class="fas fa-book" aria-hidden="true"></i>
+                  <p>
+                    <a href="https://tecmovi.weebly.com/glossaacuterio.html" target="_blank">Dicionário Tech</a> - Termos explicados
+                  </p>
+                </div>
+              </div>
+              <div class="carrossel-controles">
+                <button class="carrossel-prev" aria-label="Slide anterior">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carrossel-indicadores">
+                  <button aria-label="Slide 1" data-index="0" class="ativo"></button>
+                  <button aria-label="Slide 2" data-index="1"></button>
+                  <button aria-label="Slide 3" data-index="2"></button>
+                </div>
+                <button class="carrossel-next" aria-label="Próximo slide">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+          <div class="hero-imagem">
+            <img src="https://i.postimg.cc/xjpr3RVR/abc.png" alt="Idosos usando tablets e smartphones com sorrisos" width="600" height="400" loading="eager">
+          </div>
+        </div>
+      </section>
+      <section class="beneficios">
+        <div class="container">
+          <h2>Por que aprender tecnologia?</h2>
+          <div class="beneficios-grid">
+            <article class="beneficio">
+              <div class="beneficio-icon" aria-hidden="true">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Estimula a mente</h3>
+              <p>Aprender coisas novas mantém o cérebro ativo e saudável, prevenindo doenças cognitivas.</p>
+            </article>
+            <article class="beneficio">
+              <div class="beneficio-icon" aria-hidden="true">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Conecta pessoas</h3>
+              <p>Permite conversar com familiares e amigos distantes através de videochamadas e mensagens.</p>
+            </article>
+            <article class="beneficio">
+              <div class="beneficio-icon" aria-hidden="true">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3>Facilidade no dia a dia</h3>
+              <p>Compras, bancos, consultas médicas e outros serviços sem sair de casa.</p>
+            </article>
+            <article class="beneficio">
+              <div class="beneficio-icon" aria-hidden="true">
+                <i class="fas fa-laugh-beam"></i>
+              </div>
+              <h3>Diversão e entretenimento</h3>
+              <p>Filmes, músicas, jogos, livros e muito mais ao seu alcance.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="cursos" id="cursos">
+        <div class="container">
+          <h2>Nossos Cursos</h2>
+          <div class="cursos-grid">
+            <article class="curso" data-curso="celular-basico">
+              <div class="curso-icon" aria-hidden="true">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Celular Básico</h3>
+              <p>Aprenda a usar seu smartphone para as necessidades básicas, de maneira que possam utilizá-los em sua vida cotidiana da forma mais autônoma possível</p>
+              <ul class="curso-detalhes">
+                <li>
+                  <i class="fas fa-clock" aria-hidden="true"></i> 5 horas
+                </li>
+                <li>
+                  <i class="fas fa-user-graduate" aria-hidden="true"></i> Certificado
+                </li>
+              </ul>
+              <div class="curso-botoes">
+                <a href="https://www.youtube.com/watch?v=BDzmuDpndJ8&list=PLnGeaJwpNExxrp7-LgksEn0PnEVJRg4NW&index=2" target="_blank" rel="noopener noreferrer" class="btn-curso"> Acessar Curso <i class="fas fa-external-link-alt"></i>
+                </a>
+                <button class="btn-curso btn-secundario" aria-expanded="false" aria-controls="modal-curso"> Saiba mais </button>
+              </div>
+            </article>
+            <article class="curso" data-curso="computador-iniciantes">
+              <div class="curso-icon" aria-hidden="true">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <h3>Computador para Iniciantes</h3>
+              <p>Domine o uso do computador: ligar/desligar, navegar na internet, usar programas básicos.</p>
+              <ul class="curso-detalhes">
+                <li>
+                  <i class="fas fa-clock" aria-hidden="true"></i> 8.5 horas
+                </li>
+                <li>
+                  <i class="fas fa-user-graduate" aria-hidden="true"></i> Certificado
+                </li>
+              </ul>
+              <div class="curso-botoes">
+                <a href="https://www.udemy.com/course/informatica-basica-para-iniciantes-de-todas-as-idades/?srsltid=AfmBOop505UzJCBZqlX5AHong1bkdRj5Vny73Yfh29f2IaBPNM-uJnja" target="_blank" rel="noopener noreferrer" class="btn-curso"> Acessar Curso <i class="fas fa-external-link-alt"></i>
+                </a>
+                <button class="btn-curso btn-secundario" aria-expanded="false" aria-controls="modal-curso"> Saiba mais </button>
+              </div>
+            </article>
+            <article class="curso" data-curso="internet-segura">
+              <div class="curso-icon" aria-hidden="true">
+                <i class="fas fa-globe"></i>
+              </div>
+              <h3>Internet Segura</h3>
+              <p>Navegue com segurança: identificar golpes, criar senhas seguras, proteger seus dados.</p>
+              <ul class="curso-detalhes">
+                <li>
+                  <i class="fas fa-clock" aria-hidden="true"></i> 12 horas
+                </li>
+                <li>
+                  <i class="fas fa-user-graduate" aria-hidden="true"></i> Certificado
+                </li>
+              </ul>
+              <div class="curso-botoes">
+                <a href="https://www.ev.org.br/cursos/seguranca-em-tecnologia-da-informacao" target="_blank" rel="noopener noreferrer" class="btn-curso"> Acessar Curso <i class="fas fa-external-link-alt"></i>
+                </a>
+                <button class="btn-curso btn-secundario" aria-expanded="false" aria-controls="modal-curso"> Saiba mais </button>
+              </div>
+            </article>
+            <article class="curso" data-curso="programacao-basica">
+              <div class="curso-icon" aria-hidden="true">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programação Básica</h3>
+              <p>Introdução à lógica de programação de forma simples e divertida.</p>
+              <ul class="curso-detalhes">
+                <li>
+                  <i class="fas fa-clock" aria-hidden="true"></i> 4.4 horas
+                </li>
+                <li>
+                  <i class="fas fa-user-graduate" aria-hidden="true"></i> Certificado
+                </li>
+              </ul>
+              <div class="curso-botoes">
+                <a href="https://www.udemy.com/course/intro-a-logica-de-programacao/?couponCode=2021PM25" target="_blank" rel="noopener noreferrer" class="btn-curso"> Acessar Curso <i class="fas fa-external-link-alt"></i>
+                </a>
+                <button class="btn-curso btn-secundario" aria-expanded="false" aria-controls="modal-curso"> Saiba mais </button>
+              </div>
+            </article>
+          </div>
+          <div class="cursos-cta">
+            <p>Não encontrou o que procura?</p>
+            <a href="#contato" class="btn">Solicite um curso personalizado</a>
+          </div>
+        </div>
+      </section>
+      <section class="dicas" id="dicas">
+        <div class="container">
+          <h2>Dicas Rápidas</h2>
+          <div class="dicas-accordion" itemscope itemtype="https://schema.org/FAQPage">
+            <article class="dica" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <button class="dica-titulo" aria-expanded="false" aria-controls="dica1" itemprop="name">
+                <span>Como criar uma senha segura</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="dica-conteudo" id="dica1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Use uma combinação de letras maiúsculas, minúsculas, números e símbolos. Pode ser uma frase que você lembre fácil, como "MinhaNet@2023". Evite datas de nascimento ou sequências simples como "123456".</p>
+              </div>
+            </article>
+            <article class="dica" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <button class="dica-titulo" aria-expanded="false" aria-controls="dica2" itemprop="name">
+                <span>Identificando e-mails falsos</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="dica-conteudo" id="dica2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Desconfie de e-mails com erros de português, que pedem dados pessoais ou que tenham links estranhos. Sempre verifique o endereço do remetente. Bancos e empresas sérias nunca pedem senhas por e-mail.</p>
+              </div>
+            </article>
+            <article class="dica" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <button class="dica-titulo" aria-expanded="false" aria-controls="dica3" itemprop="name">
+                <span>Aumentando o tamanho da letra</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="dica-conteudo" id="dica3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                  <strong>No celular:</strong> Vá em Configurações > Acessibilidade > Tamanho da Fonte. <strong>No computador:</strong> Pressione Ctrl e + para aumentar ou Ctrl e - para diminuir. No Chrome, também pode usar Ctrl e rolar o mouse.
+                </p>
+              </div>
+            </article>
+            <article class="dica" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <button class="dica-titulo" aria-expanded="false" aria-controls="dica4" itemprop="name">
+                <span>Fazendo backup de fotos</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </button>
+              <div class="dica-conteudo" id="dica4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <p itemprop="text">Salve suas fotos importantes em dois lugares: no computador e em um serviço de nuvem como Google Fotos ou iCloud. Assim, se perder o celular, suas memórias estarão seguras.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="depoimentos" id="depoimentos">
+        <div class="container">
+          <h2>Depoimentos</h2>
+          <div class="depoimentos-carrossel" aria-live="polite">
+            <article class="depoimento ativo" aria-current="true">
+              <div class="depoimento-conteudo">
+                <blockquote class="depoimento-texto">
+                  <p>"Aos 72 anos, finalmente consegui me comunicar com meus netos pelo WhatsApp. As aulas são muito pacientes e explicativas!"</p>
+                </blockquote>
+                <div class="depoimento-autor">
+                  <img src="https://img.freepik.com/vetores-premium/icone-da-conta-icone-do-usuario-graficos-vetoriais_292645-552.jpg" alt="Maria Silva sorrindo" width="80" height="80" loading="lazy">
+                  <div>
+                    <h4>Maria Silva</h4>
+                    <p>Aluna do curso de Celular Básico</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="depoimento">
+              <div class="depoimento-conteudo">
+                <blockquote class="depoimento-texto">
+                  <p>"Nunca é tarde para aprender! Hoje faço minhas compras online e consulto meus exames pelo celular, tudo graças a esse curso."</p>
+                </blockquote>
+                <div class="depoimento-autor">
+                  <img src="https://img.freepik.com/vetores-premium/icone-da-conta-icone-do-usuario-graficos-vetoriais_292645-552.jpg" alt="João Santos usando um tablet" width="80" height="80" loading="lazy">
+                  <div>
+                    <h4>João Santos</h4>
+                    <p>Aluno do curso de Internet Segura</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="depoimento">
+              <div class="depoimento-conteudo">
+                <blockquote class="depoimento-texto">
+                  <p>"Minha filha mora no exterior e agora conversamos todos os dias por videochamada. Valeu cada minuto do curso!"</p>
+                </blockquote>
+                <div class="depoimento-autor">
+                  <img src="https://img.freepik.com/vetores-premium/icone-da-conta-icone-do-usuario-graficos-vetoriais_292645-552.jpg" alt="Ana Oliveira em videochamada" width="80" height="80" loading="lazy">
+                  <div>
+                    <h4>Ana Oliveira</h4>
+                    <p>Aluna do curso de Celular Avançado</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="carrossel-controles">
+            <button class="carrossel-prev" aria-label="Depoimento anterior">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carrossel-indicadores">
+              <button aria-label="Depoimento 1" data-index="0" class="ativo"></button>
+              <button aria-label="Depoimento 2" data-index="1"></button>
+              <button aria-label="Depoimento 3" data-index="2"></button>
+            </div>
+            <button class="carrossel-next" aria-label="Próximo depoimento">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="recursos-externos" id="recursos-externos">
+        <div class="container">
+          <h2>Recursos Úteis</h2>
+          <div class="recursos-grid">
+            <article class="recurso-card">
+              <div class="preview-container">
+                <iframe src="https://codepen.io/Matheus-Brasil-the-sasster/full/mydoLPY" loading="lazy" class="site-preview" title="Quiz de Tecnologia para Idosos" aria-label="Visualização do Quiz Interativo de Tecnologia" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="preview-overlay"></div>
+              </div>
+              <div class="recurso-conteudo">
+                <h3>Quiz Interativo</h3>
+                <p>Teste seus conhecimentos com nosso quiz sobre tecnologia básica para idosos.</p>
+                <a href="https://codepen.io/Matheus-Brasil-the-sasster/full/mydoLPY" target="_blank" rel="noopener noreferrer" class="btn-recurso">Acessar Quiz <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+            <article class="recurso-card">
+              <div class="preview-container">
+                <iframe src="https://www.cursoemvideo.com/cursos/" loading="lazy" class="site-preview" title="Cursos de Tecnologia Gratuitos" aria-label="Visualização do site Curso em Vídeo" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="preview-overlay"></div>
+              </div>
+              <div class="recurso-conteudo">
+                <h3>Videoaulas Gratuitas</h3>
+                <p>Aprenda com os melhores cursos online gratuitos de tecnologia.</p>
+                <a href="https://www.cursoemvideo.com/cursos/" target="_blank" rel="noopener noreferrer" class="btn-recurso">Acessar Cursos <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+            <article class="recurso-card">
+              <div class="preview-container">
+                <iframe src="https://tecmovi.weebly.com/glossaacuterio.html?utm_source=chatgpt.com" loading="lazy" class="site-preview" title="Dicionário Tech" aria-label="Visualização do site TecMovl" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="preview-overlay"></div>
+              </div>
+              <div class="recurso-conteudo">
+                <h3>Dicionário Tech</h3>
+                <p>Glossário com termos tecnológicos explicados de forma simples.</p>
+                <a href="https://tecmovi.weebly.com/glossaacuterio.html?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="btn-recurso">Acessar Dicionário <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+            <article class="recurso-card">
+              <div class="preview-container">
+                <iframe src="https://guilhermessh.github.io/comunidade/" loading="lazy" class="site-preview" title="Comunidade" aria-label="Visualização da comunidade" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="preview-overlay"></div>
+              </div>
+              <div class="recurso-conteudo">
+                <h3>Comunidade</h3>
+                <p>Comunidade criada para compartilhamento de ideias.</p>
+                <a href="comunidade.html" target="_blank" rel="noopener noreferrer" class="btn-recurso">Acessar Comunidade <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="contato" id="contato">
+        <div class="container">
+          <h2>Fale Conosco</h2>
+          <div class="contato-grid">
+            <div class="contato-info">
+              <h3>Dúvidas ou sugestões?</h3>
+              <p>Estamos aqui para ajudar você nessa jornada digital!</p>
+              <address>
+                <ul>
+                  <li>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <a href="tel:+5511999999999">(11) 99999-9999</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:contato@tecnologiaparaidosos.com.br">contato@tecnologiaparaidosos.com.br</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Centro, São Paulo/SP
+                  </li>
+                  <li>
+                    <i class="fas fa-clock" aria-hidden="true"></i> Segunda a Sexta, das 9h às 18h
+                  </li>
+                </ul>
+              </address>
+              <div class="contato-social">
+                <h4>Nos acompanhe</h4>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" aria-label="YouTube" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="#" aria-label="WhatsApp" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <form action="https://formspree.io/f/xjkwzwyy" method="POST" class="contato-form" id="form-contato" netlify>
+              <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome completo">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$">
+              </div>
+              <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                  <option value="" disabled selected>Selecione um assunto</option>
+                  <option value="duvida">Dúvida sobre cursos</option>
+                  <option value="matricula">Matrícula</option>
+                  <option value="sugestao">Sugestão</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required minlength="10" placeholder="Escreva sua mensagem aqui"></textarea>
+              </div>
+              <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <div class="logo">
+              <img src="https://i.postimg.cc/x8xtncgD/logo-tech.webp" alt="Logo Tecnologia para Idosos" width="40" height="40" loading="lazy">
+              <h3>Tecnologia para <span>Idosos</span>
+              </h3>
+            </div>
+            <p>Empoderando a terceira idade através do conhecimento tecnológico.</p>
+            <p>
+              <small>© <span id="current-year">2025</span> Tecnologia para Idosos. Todos os direitos reservados. </small>
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+              <li>
+                <a href="#inicio">Início</a>
+              </li>
+              <li>
+                <a href="#cursos">Cursos</a>
+              </li>
+              <li>
+                <a href="#dicas">Dicas</a>
+              </li>
+              <li>
+                <a href="#depoimentos">Depoimentos</a>
+              </li>
+              <li>
+                <a href="#recursos-externos">Recursos Úteis</a>
+              </li>
+              <li>
+                <a href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-cursos">
+            <h4>Cursos</h4>
+            <ul>
+              <li>
+                <a href="#" data-curso="celular-basico">Celular Básico</a>
+              </li>
+              <li>
+                <a href="#" data-curso="computador-iniciantes">Computador para Iniciantes</a>
+              </li>
+              <li>
+                <a href="#" data-curso="internet-segura">Internet Segura</a>
+              </li>
+              <li>
+                <a href="#" data-curso="programacao-basica">Programação Básica</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contato">
+            <h4>Contato</h4>
+            <address>
+              <ul>
+                <li>
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                  <a href="tel:+5511999999999">(11) 99999-9999</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <a href="mailto:contato@tecnologiaparaidosos.com.br">contato@tecnologiaparaidosos.com.br</a>
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i> São Paulo/SP
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="btn-topo" title="Voltar ao topo" aria-label="Voltar ao topo">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="modal" id="modal-curso" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <div class="modal-conteudo">
+        <button class="modal-fechar" aria-label="Fechar modal">×</button>
+        <h3 id="modal-titulo"></h3>
+        <div id="modal-conteudo"></div>
+        <button class="btn" id="modal-inscrever">Quero me inscrever</button>
+      </div>
+    </div>
+    <script src="home.js" defer></script>
+    <div class="elfsight-app-0263c1e7-474b-46b9-b3ed-daa947529c31" data-elfsight-app-lazy></div>
+    <script>
+      // Atualizar ano no footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      // Pré-carregar funcionalidades
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>

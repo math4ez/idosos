@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="logo animate__animated animate__fadeInDown">Cadastro</h1>
+                <div class="theme-switcher">
+                    <button id="themeToggle" aria-label="Alternar tema" class="theme-btn">
+                        <span class="moon"><i class="fas fa-moon"></i></span>
+                        <span class="sun"><i class="fa-solid fa-sun" style="color: #ffffff;"></i></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <section class="screen home-screen active" id="homeScreen">
+                <div class="screen-content">
+                    <div class="welcome-message animate__animated animate__fadeIn">
+                    </div>
+                    <div class="login-card">
+                        
+                        <form>
+                            <div class="input-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="nome" placeholder="Digite seu nome">
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="date">Data de Nascimento</label>
+                                <input type="date" id="nascimento">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="tel">Telefone</label>
+                                <input type="tel" id="telefone" placeholder="Digite seu Telefone">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="Digite seu email">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="password">Senha</label>
+                                <input type="password" id="senha" placeholder="Digite sua senha">
+                                <span class="toggle-password" id="togglePassword">
+                                  <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                                </span>
+                              </div>
+
+                              <div class="input-group">
+                                <label for="confirmarSenha">Confirmar Senha</label>
+                                <input type="password" id="confirmarSenha" placeholder="Confirme sua senha">
+                                <span class="toggle-password" id="toggleConfirmPassword">
+                                  <i class="fa-solid fa-eye" id="eyeConfirmIcon"></i>
+                                </span>
+                              </div>
+                              
+                              
+                            <div class="start-btn-container">
+                                <button type="submit" class="start-btn animate__animated animate__pulse animate__infinite">
+                                    
+                                    <span>Cadastrar</span>
+                                </button>
+                                <p>Já tem conta? <a href="index.html">Faça o login</a></p>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade Tech para Idosos</title>
+    <link rel="stylesheet" href="comunidade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="#" class="nav-item" id="homeLink">Início</a>
+                <div class="search-container">
+                    <button id="toggleSearchBtn" class="search-icon-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar...">
+                    <button id="executeSearchBtn" class="search-button">
+                        <i class="fas fa-arrow-right"></i> </button>
+                </div>
+            </div>
+            <div class="profile-section">
+                <a href="#" class="profile-link" id="profileLink">
+                    <i class="fas fa-user-circle profile-icon"></i>
+                    <span id="profileUsername">Perfil</span>
+                </a>
+                <button id="logoutBtn" class="logout-button" style="display:none;">Sair</button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="notificationContainer" class="notification-container"></div>
+    <div id="searchMessage" class="search-message" style="display: none;"></div> <main class="container">
+        <section class="create-post-section">
+            <div class="post-input-area">
+                <textarea id="postContent" placeholder="Compartilhe sua experiência, tire dúvidas ou dê dicas!"></textarea>
+                <div class="post-actions">
+                    <label for="imageUpload" class="action-button photo-button">
+                        <i class="fas fa-camera"></i> Foto
+                        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    </label>
+                    <button id="postBtn" class="action-button post-button">Postar</button>
+                </div>
+                <div id="imagePreview" class="image-preview" style="display: none;">
+                    <img src="" alt="Pré-visualização da imagem" style="max-width: 100px; max-height: 100px; object-fit: contain;">
+                    <button id="removeImageBtn" class="remove-image-btn">&times;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="feed-section" id="feedSection">
+            <div class="loading-message" id="loadingMessage">Carregando posts...</div>
+        </section>
+
+        <div id="editPostModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close-button" id="closeEditModal">&times;</span>
+                <h2>Editar Postagem</h2>
+                <textarea id="editPostContent" class="edit-textarea"></textarea>
+                <button id="saveEditedPostBtn" class="action-button post-button">Salvar Alterações</button>
+            </div>
+        </div>
+
+        <div id="confirmModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close-button" id="closeConfirmModal">&times;</span>
+                <h2>Confirmação</h2>
+                <p id="confirmMessage" style="text-align: center; margin-bottom: 25px; font-size: 1.1em;"></p>
+                <div class="modal-buttons">
+                    <button id="confirmNoBtn" class="action-button photo-button">Cancelar</button>
+                    <button id="confirmYesBtn" class="action-button post-button delete-confirm-btn">Sim, Excluir</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="comunidade.js"></script>
+</body>
+</html>

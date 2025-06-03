@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="logo animate__animated animate__fadeInDown">Projeto Tecnologia para Idosos</h1>
+                <div class="theme-switcher">
+                    <button id="themeToggle" aria-label="Alternar tema" class="theme-btn">
+                        <span class="moon"><i class="fas fa-moon"></i></span>
+                        <span class="sun"><i class="fa-solid fa-sun" style="color: #ffffff;"></i></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <section class="screen home-screen active" id="homeScreen">
+                <div class="screen-content">
+                    <div class="welcome-message animate__animated animate__fadeIn">
+                        <h2 class="screen-title">Faça o login</h2>
+                        <p class="screen-subtitle">Preencha suas informações</p>
+                    </div>
+
+                    <div class="login-card">
+                        <h2>Entrar</h2>
+                        <form>
+                            <div class="input-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Senha</label>
+                                <input type="password" id="password" placeholder="Digite sua senha">
+                                <span class="toggle-password" id="togglePassword">
+                                  <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                                </span>
+                              </div>
+                              
+                            <div class="start-btn-container">
+                                <button type="submit" class="start-btn animate__animated animate__pulse animate__infinite">
+                                    <i class="fa-solid fa-thumbs-up fa-flip-horizontal"></i>
+                                    <span>Acessar</span>
+                                </button>
+                                
+                                <a href="#" id="forgotPasswordLink" class="forgot-password">Esqueceu a senha?</a>
+                                <p>Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><i class="fas fa-code"></i> Desenvolvido pela Equipe Tecnologia para Idosos</p>
+                    <p><i class="fas fa-graduation-cap"></i> Todos os direitos reservados</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/unisuam/" aria-label="Instagram" target="_blank">
+                        <i class="fa-brands fa-instagram social-icon"></i>
+                    </a>
+                    <a href="https://br.indeed.com/cmp/Unisuam/jobs" aria-label="LinkedIn" target="_blank">
+                        <i class="fa-brands fa-linkedin social-icon"></i>
+                    </a>
+                    <a href="https://www.unisuam.edu.br/" aria-label="Unisuam Website" target="_blank">
+                        <i class="fa-solid fa-globe social-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
